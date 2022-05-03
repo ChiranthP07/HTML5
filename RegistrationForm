@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<Center>
+	<form>
+		<h1>Internship Registration</h1>
+		<table>
+		 <tr>
+		 	<td>Name:</td><td><input type="text" pattern=[A-Z,a-z]{2,40} width="10%" required/></td>
+		 </tr>
+		 <tr>
+		 	<td>password:</td><td><input type="password" pattern=[A-Z,a-z,0-9,!,@,#,$,%,^,&,*]{8} width="7%" required/></td>
+		 </tr>
+		 <tr>
+		 	<td>Email:</td><td><input type="email" required/></td>
+		 </tr>
+		 <tr>
+		 	<td>Graduation month & Year:</td><td><input type="date" pattern=[2018-2019]/ required/></td>
+		 </tr>
+		 <tr>
+		 	<td>Proficiency Level</td><td>HTML:<input type="range" min=0 max=5 step=1/></td>
+		 </tr>
+		 <tr>
+		  <td></td><td>CSS:<input type="range" min=0 max=5 step=1 width="10%"/></td>
+		 </tr>
+		 <tr>
+		   <td></td><td>JavaScript:<input type="range" min=0 max=5 step=1/></td>
+		 </tr>
+		</table>
+		<p align="center"><input type="submit" value="Submit"></p>
+		</form>
+	</Center>
+</body>
+</html>
