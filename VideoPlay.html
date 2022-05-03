@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+	function speed()
+	{
+	   let video=document.querySelector('video');
+	   video.defaultPlaybackRate=1;
+	   video.load();
+	   function fast()
+	   {
+		   video.playbackRate +=0.5;
+	   }
+	   function slow()
+	   {
+		   video.playbackRate -=0.5;
+	   }
+	   function normal()
+	   {
+		   video.playbackRate=1;
+	   }
+	}
+</script>
+</head>
+<body>
+    <center>
+    <h2>WELCOME TO VIDEOS</h2>
+	<video width=50% height=50% poster="/images/image.jpg" controls>
+		<source src="movie.mp4" type="video/mp4">
+		<source src="movie.ogg" type="video/ogg">
+		Your Browser doesn't support video tag
+	</video>
+	<p>
+	<input type="button" value="slow" onclick="slow()">
+	<input type="button" value="normal" onclick="normal()">
+	<input type="button" value="fast" onclick="fast()">
+	</p>
+	</center>
+</body>
+</html>
