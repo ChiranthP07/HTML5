@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<body>
+<center>
+<h2 align="center">Worldwide Market share of the browser in 2020</h2>
+		<canvas id="mycanvas" style="border:1px solid #c3c3c3;width:'60%';height:'50%'"></canvas>
+		<script>
+	var c=document.getElementById("mycanvas");
+	var ctx=c.getContext("2d");
+	ctx.beginPath();
+	ctx.font='10px Arial';
+	ctx.fillText("Chrome",5,135);
+	ctx.fillText("Safari",5,120);
+	ctx.fillText("Firefox",5,105);
+	ctx.fillText("Samsung I",1,90);
+	ctx.fillText("Edge",5,75);
+	ctx.fillText("Opera",5,60);
+	ctx.fillText("Others",5,45);
+	ctx.fillText("Market Share in %",100,145);
+	ctx.fillStyle='Orange';
+	ctx.fillRect(40,125,240,10);
+	ctx.font='10px Arial';
+	ctx.fillText("64",285,125);
+	ctx.fillStyle='Yellow';
+	ctx.fillRect(40,110,90,10);
+	ctx.font='10px Arial';
+	ctx.fillText("19",135,110);
+	ctx.fillStyle='Green';
+	ctx.fillRect(40,95,30,10);
+	ctx.font='10px Arial';
+	ctx.fillText("4",75,95);
+	ctx.fillStyle='Crimson';
+	ctx.fillRect(40,80,30,10);
+	ctx.font='10px Arial';
+	ctx.fillText("4",75,80);
+	ctx.fillStyle='Gray';
+	ctx.fillRect(40,65,20,10);
+	ctx.font='10px Arial';
+	ctx.fillText("3",65,65);
+	ctx.fillStyle='Brown';
+	ctx.fillRect(40,50,13,10);
+	ctx.font='10px Arial';
+	ctx.fillText("3",73,50);
+	ctx.fillStyle='Lime';
+	ctx.fillRect(40,35,30,10);
+	ctx.font='10px Arial';
+	ctx.fillText("4",75,35);
+</script>
+</center>
+</body>
+</html>
